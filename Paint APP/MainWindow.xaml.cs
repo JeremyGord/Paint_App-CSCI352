@@ -23,7 +23,7 @@ namespace Paint_APP
         public MainWindow()
         {
             InitializeComponent();
-        }
+        }//
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
