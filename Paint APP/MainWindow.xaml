@@ -8,13 +8,35 @@
         Title="MainWindow" Height="450" Width="800">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="Black" Offset="0"/>
-            <GradientStop Color="#FFFF0E0E" Offset="1"/>
+            <GradientStop Color="Blue" Offset="1"/>
+            <GradientStop Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Purple"/>
+                <GradientStop Offset="4"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <InkCanvas x:Name="Canv" HorizontalAlignment="Center" Height="302" Margin="37,43,60,0" VerticalAlignment="Top" Width="695" Background="White"/>
         <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Margin="647,370,0,0" VerticalAlignment="Top" Width="85" Click="Clear_Click" Height="21"/>
+        <Button x:Name="ColorBlu" Content="     " HorizontalAlignment="Left" Margin="41,386,0,0" VerticalAlignment="Top" Background="Blue" Click="ColorBlu_Click"/>
+        <Button x:Name="ColorRed" Content="     " HorizontalAlignment="Left" Margin="66,361,0,0" VerticalAlignment="Top" Background="Red" Click="ColorRed_Click"/>
+        <Button x:Name="ColorPurp" Content="     " HorizontalAlignment="Left" Margin="66,386,0,0" VerticalAlignment="Top" Background="Purple" Click="ColorPurp_Click"/>
+        <Button x:Name="ColorGrn" Content="     " HorizontalAlignment="Left" Margin="41,361,0,0" VerticalAlignment="Top" Background="Green" Click="ColorGrn_Click"/>
+        <Button x:Name="Thickness" Content="Thick Pen" HorizontalAlignment="Left" Margin="577,370,0,0" VerticalAlignment="Top" Click="Thickness_Click" Background="White" Height="21" Width="65" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.784"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="thinPen" Content="Fine Pen" HorizontalAlignment="Left" Margin="507,368,0,0" VerticalAlignment="Top" Height="25" Width="59" Background="White" Click="thinPen_Click"/>
+        <Button x:Name="Reset" Content="Reset Pen" HorizontalAlignment="Left" Margin="435,371,0,0" VerticalAlignment="Top" Height="22" Width="67" Click="Reset_Click"/>
 
     </Grid>
 </Window>
