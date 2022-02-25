@@ -71,5 +71,10 @@ namespace Paint_APP
             Canv.DefaultDrawingAttributes.Width = 2;
             Canv.DefaultDrawingAttributes.Height = 2;
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Console.WriteLine("Hello World");
+        }
     }  
 }
